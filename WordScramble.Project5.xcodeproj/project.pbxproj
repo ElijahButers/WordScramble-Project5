@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E205ECBF1C904AD800C1856F /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = E205ECBE1C904AD800C1856F /* start.txt */; };
 		E2F2A4851C8EEB9100D4738A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2A4841C8EEB9100D4738A /* AppDelegate.swift */; };
 		E2F2A4871C8EEB9100D4738A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F2A4861C8EEB9100D4738A /* MasterViewController.swift */; };
 		E2F2A48C1C8EEB9100D4738A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F2A48A1C8EEB9100D4738A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E205ECBE1C904AD800C1856F /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		E2F2A4811C8EEB9100D4738A /* WordScramble.Project5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordScramble.Project5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F2A4841C8EEB9100D4738A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F2A4861C8EEB9100D4738A /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				E2F2A4861C8EEB9100D4738A /* MasterViewController.swift */,
 				E2F2A48A1C8EEB9100D4738A /* Main.storyboard */,
 				E2F2A48D1C8EEB9100D4738A /* Assets.xcassets */,
+				E205ECBE1C904AD800C1856F /* start.txt */,
 				E2F2A48F1C8EEB9100D4738A /* LaunchScreen.storyboard */,
 				E2F2A4921C8EEB9100D4738A /* Info.plist */,
 			);
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F2A4911C8EEB9100D4738A /* LaunchScreen.storyboard in Resources */,
+				E205ECBF1C904AD800C1856F /* start.txt in Resources */,
 				E2F2A48E1C8EEB9100D4738A /* Assets.xcassets in Resources */,
 				E2F2A48C1C8EEB9100D4738A /* Main.storyboard in Resources */,
 			);
@@ -286,6 +290,7 @@
 				E2F2A4971C8EEB9100D4738A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
