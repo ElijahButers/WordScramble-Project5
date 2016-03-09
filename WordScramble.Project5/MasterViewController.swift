@@ -10,7 +10,8 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var objects = [AnyObject]()
+    var objects = [String]()
+    var allWords = [String]()
 
 
     override func viewDidLoad() {
