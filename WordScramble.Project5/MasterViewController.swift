@@ -103,7 +103,7 @@ class MasterViewController: UITableViewController {
     
     func wordIsOriginal(word: String) -> Bool {
         
-        return true
+        return !objects.contains(word)
     }
     
     func wordIsReal(word: String) -> Bool {
