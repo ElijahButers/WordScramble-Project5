@@ -62,6 +62,22 @@ class MasterViewController: UITableViewController {
         objects.removeAll(keepCapacity: true)
         tableView.reloadData()
     }
+    
+    func promptForAnswer() {
+        
+        let ac = UIAlertController(title: "Enter answer", message: nil, preferredStyle: .Alert)
+        ac.addTextFieldWithConfigurationHandler(nil)
+        
+        let submitAction = UIAlertAction(title: "Submit", style: .Default) { [unowned self, ac] (action: UIAlertAction!) in
+            
+            let answer = ac.textFields![0]
+            self.submitAnswer(answer.text!)
+    }
+        
+        ac.addAction(submitAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
 
 }
 
+}
