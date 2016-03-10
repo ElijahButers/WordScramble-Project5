@@ -90,10 +90,25 @@ class MasterViewController: UITableViewController {
                     objects.insert(answer, atIndex: 0)
                     
                     let indexPAth = NSIndexPath(forRow: 0, inSection: 0)
-                    tableView.insertRowsAtIndexPaths([NSIndexPath], withRowAnimation: .Automatic)
+                    tableView.insertRowsAtIndexPaths([indexPAth], withRowAnimation: .Automatic)
                 }
             }
         }
+    }
+    
+    func wordIsPossible(word: String) -> Bool {
+        
+        return true
+    }
+    
+    func wordIsOriginal(word: String) -> Bool {
+        
+        return true
+    }
+    
+    func wordIsReal(word: String) -> Bool {
+        
+        return true
     }
 
 }
