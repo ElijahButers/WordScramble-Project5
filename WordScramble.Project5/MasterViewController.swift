@@ -50,6 +50,14 @@ class MasterViewController: UITableViewController {
         cell.textLabel!.text = object
         return cell
     }
+    
+    func startGame() {
+        
+        allWords = GKRandomSource.sharedRandom().arrayByShufflingObjectsInArray(allWords) as! [String]
+        title = allWords[0]
+        objects.removeAll(keepCapacity: true)
+        tableView.reloadData()
+    }
 
 }
 
