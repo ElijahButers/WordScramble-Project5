@@ -78,6 +78,22 @@ class MasterViewController: UITableViewController {
         
         presentViewController(ac, animated: true, completion: nil)
 
-}
+    }
+    
+    func submitAnswer(answer: String) {
+        
+        let lowerAnswer = answer.lowercaseString
+        
+        if wordIsPossible(lowerAnswer) {
+            if wordIsOriginal(lowerAnswer) {
+                if wordIsReal(lowerAnswer) {
+                    objects.insert(answer, atIndex: 0)
+                    
+                    let indexPAth = NSIndexPath(forRow: 0, inSection: 0)
+                    tableView.insertRowsAtIndexPaths([NSIndexPath], withRowAnimation: .Automatic)
+                }
+            }
+        }
+    }
 
 }
