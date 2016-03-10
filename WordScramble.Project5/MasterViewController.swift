@@ -26,6 +26,8 @@ class MasterViewController: UITableViewController {
         } else {
             allWords = ["silkworm"]
         }
+        
+        startGame()
     }
 
     override func didReceiveMemoryWarning() {
