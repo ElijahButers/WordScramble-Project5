@@ -98,6 +98,16 @@ class MasterViewController: UITableViewController {
     
     func wordIsPossible(word: String) -> Bool {
         
+        var tempWord = title!.lowercaseString
+        
+        for letter in word.characters {
+            if let pos = tempWord.rangeOfString(String(letter)) {
+                tempWord.removeAtIndex(pos.startIndex)
+            } else {
+                return false    
+            }
+        }
+        
         return true
     }
     
