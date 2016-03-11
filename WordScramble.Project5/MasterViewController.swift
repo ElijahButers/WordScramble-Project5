@@ -118,7 +118,11 @@ class MasterViewController: UITableViewController {
     
     func wordIsReal(word: String) -> Bool {
         
-        return true
+        let checker = UITextChecker()
+        let range = NSMakeRange(0, word.characters.count)
+        let misspelledRange = checker.rangeOfMisspelledWordInString(word, range: range, startingAt: 0, wrap: false, language: "en")
+        
+        return misspelledRange.location == NSNotFound
     }
 
 }
